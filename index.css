@@ -1,33 +1,85 @@
+.contact {
+  background-color: #2b2b2b;
+  color: white;
+  width: 100%;
+}
+
 .contact-block {
   display: flex;
   flex-direction: row;
-  margin: 30px;
+  padding: 30px;
+  justify-content: center;
 }
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 200px;
+.contact-block .info-block {
+  padding: 100px;
 }
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.champ {
-  border-bottom: 10%;
-}
-
-.contact-info {
+.contact-block .info-block .contact-info {
   display: flex;
   align-items: center;
+  padding-top: 20px;
+}
+.contact-block .info-block .contact-info span {
+  color: #daa520;
+  font-size: 25px;
+}
+.contact-block .info-block .contact-info .flaticon-location-pin,
+.contact-block .info-block .contact-info .flaticon-envelope,
+.contact-block .info-block .contact-info .flaticon-call {
+  color: #daa520;
+  font-size: 35px;
+  padding-right: 15px;
+}
+.contact-block .contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+.contact-block .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-block .contact-form form .champ {
+  border-bottom: 10%;
+  background-color: #2b2b2b;
+  color: white;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  margin-right: 30px;
+  height: 30px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-width: 1px;
+}
+.contact-block .contact-form form #message {
+  background-color: #2b2b2b;
+  color: white;
+  height: 75px;
+  padding-top: 20px;
+  margin-right: 30px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-width: 1px;
+}
+.contact-block .contact-form form #button {
+  margin-top: 30px;
+  background-color: #d4ae4d;
+  border: none;
+  color: white;
+  width: 125px;
+  height: 35px;
+  cursor: pointer;
 }
 
-.flaticon-location-pin,
-.flaticon-envelope,
-.flaticon-call {
-  color: #daa520;
-  width: 40px;
+.map-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+}
+.map-block #map {
+  width: 60%;
 }
 
 /*# sourceMappingURL=index.css.map */
