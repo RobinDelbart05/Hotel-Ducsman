@@ -1,0 +1,33 @@
+.contact-block {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.champ {
+  border-bottom: 10%;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.flaticon-location-pin,
+.flaticon-envelope,
+.flaticon-call {
+  color: #daa520;
+  width: 40px;
+}
+
+/*# sourceMappingURL=index.css.map */
