@@ -2,6 +2,11 @@
     background-color: #2b2b2b;
     color: white;
     width: 100%;
+
+    h3 {
+        font-family: "Sedan", serif;
+        font-size: 25px;
+    }
 }
 
 .contact-block {
@@ -13,6 +18,10 @@
     .info-block {
         padding: 100px;
 
+        p {
+            font-family: "montserrat", sans-serif;
+        }
+
         .contact-info {
             display: flex;
             align-items: center;
@@ -21,6 +30,7 @@
             span {
                 color: #daa520;
                 font-size: 25px;
+                font-family: "roboto", sans-serif;
 
             }
 
@@ -48,7 +58,8 @@
                 border-bottom: 10%;
                 background-color: #2b2b2b;
                 color: white;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
+                padding-top: 30px;
                 padding-right: 30px;
                 margin-right: 30px;
                 height: 30px;
@@ -70,7 +81,7 @@
                 border-width: 1px;
             }
 
-            #button {
+            #form-button {
                 margin-top: 30px;
                 background-color: #d4ae4d;
                 border: none;
@@ -78,6 +89,10 @@
                 width: 125px;
                 height: 35px;
                 cursor: pointer;
+                font-family: "montserrat", sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+
             }
         }
 
