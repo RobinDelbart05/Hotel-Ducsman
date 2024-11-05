@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/flaticons.css">
     <title>Contact - hotel Duscman</title>
 </head>
 
@@ -11,8 +13,8 @@
 <body>
     <div class="contact">
 
-        <div>
-            <div>
+        <div class="contact-block">
+            <div class="info-block">
                 <div>
                     <h3>Duscman</h3>
 
@@ -22,35 +24,48 @@
                         luxueux des voyages.</p>
                 </div>
 
-                <div>
-                    <p>Informations & Réservations</p>
-                    <span>03 20 01 02 03</span>
+                <div class="contact-info">
+                    <i class="flaticon-call"></i>
+                    <div>
+                        <p>Informations & Réservations</p>
+                        <span>03 20 01 02 03</span>
+                    </div>
                 </div>
 
-                <div>
-                    <p>E-mail</p>
-                    <span>info@duscman-group.com</span>
+                <div class="contact-info">
+                    <i class="flaticon-envelope"></i>
+                    <div>
+                        <p>E-mail</p>
+                        <span>info@duscman-group.com</span>
+                    </div>
                 </div>
 
-                <div>
-                    <p>Adresse</p>
-                    <p>23 avenue des Nations Unies</p>
-                    <p>75001 Paris</p>
+                <div class="contact-info">
+                    <i class="flaticon-location-pin"></i>
+                    <div>
+                        <p>Adresse</p>
+                        <p>23 avenue des Nations Unies</p>
+                        <p>75001 Paris</p>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <div class="contact-form">
 
                 <h3>Restons en contact</h3>
                 <form action="">
 
-                    <input type="text" name="nom" id="nom" placeholder="Votre nom*" required>
+                    <div>
+                        <input type="text" name="nom" class="champ" placeholder="Votre nom*" required>
+                        <input type="email" name="email" class="champ" placeholder="Votre e-mail*" required>
+                    </div>
 
-                    <input type="email" name="email" id="email" placeholder="Votre e-mail*" required>
+                    <div>
 
-                    <input type="tel" name="phone" id="phone" placeholder="Votre numéro de téléphone*" required>
+                        <input type="tel" name="phone" class="champ" placeholder="Votre numéro de téléphone*" required>
+                        <input type="text" name="sujet" class="champ" placeholder="Sujet*" required>
 
-                    <input type="text" name="sujet" id="sujet" placeholder="Sujet*" required>
+                    </div>
 
                     <textarea name="message" id="message" placeholder="Message*" required></textarea>
 
