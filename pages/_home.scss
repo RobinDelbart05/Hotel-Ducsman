@@ -1,15 +1,24 @@
 .home {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   margin-left: 440px;
+  overflow-x: hidden;
   *.stars {
     color: $stars;
     letter-spacing: 3px;
     margin-bottom: 20px;
     user-select: none;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
   }
   *.sur-titre {
     color: $surTitre;
     letter-spacing: 5px;
     text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: scaleY(1.2);
+    font-size: 0.8rem;
   }
   * {
     margin: 0;
@@ -18,13 +27,21 @@
   }
   header {
     .header-img-container {
+      position: relative;
       background: url(/images/slider/2.jpg) center/cover;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       color: whitesmoke;
+      .header-img-filter {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.205);
+      }
       .header-text-img-container {
+        z-index: 1;
         width: 50%;
         height: 40%;
         display: flex;
@@ -32,11 +49,16 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
+        * {
+          user-select: none;
+        }
         .subtitle-header-img-container {
           letter-spacing: 3px;
           text-transform: uppercase;
           margin-bottom: 15px;
-          font-size: 0.9rem;
+          font-size: 1rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: lighter;
         }
         .title-header-img-container {
           text-transform: uppercase;
@@ -52,8 +74,8 @@
           }
           .btn-header-img-container {
             cursor: pointer;
-            height: 40px;
-            width: 180px;
+            height: 50px;
+            width: 210px;
             text-transform: uppercase;
             background: none;
             border: 2px solid rgba(255, 255, 255, 0.24);
@@ -61,6 +83,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            span {
+              letter-spacing: 2px;
+              transform: scaleY(1.2);
+              font-weight: light;
+              font-size: 0.8rem;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
             &:hover {
               background: rgba(245, 245, 245, 0.493);
               color: black;
@@ -81,13 +110,15 @@
           margin: 20px 0;
         }
         h2 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: lighter;
+          letter-spacing: 1px;
           margin: 0 0 30px 0;
+          font-family: 'Times New Roman', Times, serif;
         }
         p {
           line-height: 25px;
-          color: rgb(160, 160, 160);
+          color: $texte;
         }
       }
       .header-desc-imgs {
@@ -161,6 +192,18 @@
                 * {
                   color: $stars !important;
                 }
+                .cicd-name {
+                    &:after {
+                      color: $stars !important;
+                      background: $stars;
+                  }
+                }
+                .chambers-items {
+                  transition: 0.2s;
+                  margin-top: 15px;
+                  opacity: 1;
+                  height: 20px;
+                }
               }
               .cicd-cost {
                 letter-spacing: 2px;
@@ -182,10 +225,11 @@
                   width: 50px;
                   height: 1px;
                   top: 35px;
-                  &:hover {
-                    color: $stars !important;
-                  }
                 }
+              }
+              .chambers-items {
+                height: 0;
+                opacity: 0;
               }
             }
           }
