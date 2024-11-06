@@ -192,6 +192,9 @@ html {
   height: 1px;
   top: 35px;
 }
+.home main section.chambers .chambers-container .chambers-img-containers .chambers-img-container .chambers-img-container-desc .cicd-name:after:hover {
+  color: #e3a752 !important;
+}
 .home main section.chambers .chambers-container .chambers-img-containers.first-group {
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 40px;
