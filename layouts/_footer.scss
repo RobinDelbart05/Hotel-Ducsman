@@ -4,6 +4,7 @@
     font-family: 'Arial', sans-serif;
     transform: translateX(440px);
 
+
     .footer-content {
         display: flex;
         justify-content: space-between;
@@ -14,10 +15,8 @@
 
 
         .about,
-        .contact {
+        .footer-contact {
             width: 45%;
-
-
         }
 
         h3 {
@@ -26,6 +25,7 @@
             color: #ffffff;
             font-family: "Montserra";
             font-weight: 100;
+
 
 
         }
@@ -44,13 +44,14 @@
             line-height: 1.6;
             margin: 10px 0;
             margin-left: 50px;
-            font-weight: bold;
+            font-weight: lighter;
+
 
         }
 
 
 
-        .contact p {
+        .footer-contact p {
             margin: 5px 0;
             margin-top: 20px;
 
@@ -64,6 +65,7 @@
                 font-size: 25px;
                 font-family: "montserra";
                 font-weight: 100;
+
 
             }
         }
@@ -79,9 +81,13 @@
             font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;
 
+
+
             &:hover {
                 text-decoration: underline;
                 color: #927248;
+
+
 
 
             }
@@ -91,14 +97,17 @@
             margin-top: 20px;
             margin-bottom: 60px;
 
+
             a {
                 font-size: 1.2rem;
                 color: #e0e0e0;
                 margin-right: 10px;
                 transition: color 0.3s;
 
+
                 &:hover {
                     color: #ffffff;
+
                 }
             }
         }
@@ -110,6 +119,7 @@
         padding: 20px 0;
         border-top: 1px solid #333;
         background-color: #000000;
+
 
 
         p {
