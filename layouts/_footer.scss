@@ -14,9 +14,16 @@
 
 
 
-        .about,
+        .about {
+            width: 55%;
+        }
+
         .footer-contact {
-            width: 45%;
+            width: 35%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         h3 {
