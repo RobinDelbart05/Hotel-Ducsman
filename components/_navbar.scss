@@ -4,18 +4,24 @@
 
 
 .navbar {
+
     background-color: #1b1b1b;
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 40px;
-    height: 1000px;
+    height: 100%;
+    // height: 1000px;
     width: 350px;
     flex-direction: column;
     text-align: center;
     padding-left: 50px;
+    z-index: 10px;
+    top: 0;
+    left: 0;
     position: fixed;
+    overflow-x: hidden;
 
 
     h1 {
@@ -143,6 +149,8 @@
 
 
     // Conteneur pour les liens de navigation
+
+
     .navbar-links {
         flex-direction: column;
         width: 100%;

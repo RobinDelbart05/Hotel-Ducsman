@@ -1,22 +1,38 @@
+body {
+    margin: 0;
+}
+
 .banner {
     background-color: #1f1f1f;
     color: #e0e0e0;
     font-family: 'Arial', sans-serif;
-    transform: translateX(440px);
+    margin-left: 440px;
+    box-sizing: border-box;
+
 
     .footer-content {
         display: flex;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0;
         padding: 20px;
 
 
 
-        .about,
-        .contact {
-            width: 45%;
 
+        .about {
+            width: 70%;
+            margin-left: 32px;
+        }
+
+        .about p {
+            width: 50%;
+            line-height: 1.6rem;
+
+        }
+
+        .footer-contact {
+            width: 30%;
 
         }
 
@@ -26,6 +42,8 @@
             color: #ffffff;
             font-family: "Montserra";
             font-weight: 100;
+            margin-left: 20px;
+
 
 
         }
@@ -44,15 +62,21 @@
             line-height: 1.6;
             margin: 10px 0;
             margin-left: 50px;
-            font-weight: bold;
-
+            font-weight: lighter;
+            color: #888888
         }
 
 
 
-        .contact p {
+        .footer-contact p {
             margin: 5px 0;
             margin-top: 20px;
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+
+
 
 
 
@@ -64,14 +88,22 @@
                 font-size: 25px;
                 font-family: "montserra";
                 font-weight: 100;
+                color: #e0e0e0;
+
+
+
 
             }
+        }
+
+        .flaticon-call {
+            margin-right: 10px;
         }
 
 
 
         a {
-            color: #e0e0e0;
+            color: #927248;
             text-decoration: none;
             margin-right: 10px;
             transition: color 0.3s;
@@ -79,10 +111,12 @@
             font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;
 
-            &:hover {
-                text-decoration: underline;
-                color: #927248;
+            text-decoration: underline;
 
+
+            &:hover {
+
+                color: #e0e0e0;
 
             }
         }
@@ -90,6 +124,8 @@
         .social-icons {
             margin-top: 20px;
             margin-bottom: 60px;
+            margin-left: 20px;
+
 
             a {
                 font-size: 1.2rem;
@@ -97,8 +133,10 @@
                 margin-right: 10px;
                 transition: color 0.3s;
 
+
                 &:hover {
                     color: #ffffff;
+
                 }
             }
         }
@@ -109,7 +147,8 @@
         font-size: 0.8rem;
         padding: 20px 0;
         border-top: 1px solid #333;
-        background-color: #000000;
+        background-color: #1e1e11;
+
 
 
         p {
