@@ -10,11 +10,11 @@
 @import "base/base";
 
 // Layout
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/sidebar";
-@import "layouts/grid";
-@import "layouts/containers";
+@import "layoutss/header";
+@import "layoutss/footer";
+@import "layoutss/sidebar";
+@import "layoutss/grid";
+@import "layoutss/containerss";
 
 // Components
 @import "components/buttons";
@@ -26,6 +26,7 @@
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
+@import "pages/chambre";
 
 // Themes
 @import "themes/dark";

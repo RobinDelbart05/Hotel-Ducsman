@@ -1,18 +1,217 @@
-/* Error: expected "{".
- *     ,
- * 135 |             .
- *     |              ^
- *     '
- *   pages/_home.scss 135:14  @import
- *   main.scss 26:9           root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 135 \2502              .\a     \2502               ^\a     \2575 \a   pages/_home.scss 135:14  @import\a   main.scss 26:9           root stylesheet';
+.banner {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-family: "Arial", sans-serif;
+  transform: translateX(440px);
 }
+
+.banner .footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+}
+
+.banner .footer-content .about,
+.banner .footer-content .contact {
+  width: 45%;
+}
+
+.banner .footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Montserra";
+  font-weight: 100;
+}
+
+.banner .footer-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin-left: 50px;
+  font-family: "montserra";
+  font-weight: 100;
+}
+
+.banner .footer-content p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.banner .footer-content .contact p {
+  margin: 5px 0;
+  margin-top: 20px;
+}
+
+.banner .footer-content .footer-mobile p {
+  font-size: 25px;
+  font-family: "montserra";
+  font-weight: 100;
+}
+
+.banner .footer-content a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s;
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner .footer-content a:hover {
+  text-decoration: underline;
+  color: #927248;
+}
+
+.banner .footer-content .social-icons {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.banner .footer-content .social-icons a {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.banner .footer-content .social-icons a:hover {
+  color: #ffffff;
+}
+
+.banner .footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  background-color: #000000;
+}
+
+.banner .footer-bottom p {
+  margin: 0;
+  color: #888888;
+}
+
+.navbar {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  height: 1000px;
+  width: 350px;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 50px;
+  position: fixed;
+}
+
+.navbar h1 {
+  color: #927248;
+  font-size: 35px;
+  margin: 10px;
+  font-family: "Open Sans" serif;
+  font-weight: lighter;
+}
+
+.navbar .etoiles p {
+  color: #927248;
+  margin: 0;
+  font-size: small;
+}
+
+.navbar h3 {
+  color: #cccccc;
+  margin: 10px;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  font-family: "Abel";
+  font-weight: bolder;
+}
+
+.navbar .infos {
+  margin: 30px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar .infos .flaticon-call {
+  font-size: 45px;
+  margin-bottom: 0px;
+  color: #927248;
+  transform: translateY(10px);
+}
+
+.navbar span {
+  margin: 0;
+  color: #927248;
+  font-size: 25px;
+  font-family: "Abel";
+  font-weight: bolder;
+}
+
+.navbar .infos-reservation {
+  font-size: 18px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #b6b0b0;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar .infos-reservation p {
+  margin: 5px;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: "Agdasima";
+}
+
+.navbar ul li a {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navbar ul li .mobile {
+  color: #927248;
+}
+
+.navbar a {
+  color: #b6b0b0;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #927248;
+}
+
+.navbar .navbar-links {
+  flex-direction: column;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
