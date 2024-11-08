@@ -335,13 +335,6 @@ body {
 .navbar ul {
   padding: 0;
 }
-@media screen and (max-width: 450px) {
-  .navbar ul {
-    background: red;
-    position: absolute;
-    z-index: 100;
-  }
-}
 .navbar li {
   display: flex;
   flex-direction: column;

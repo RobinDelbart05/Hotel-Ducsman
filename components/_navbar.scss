@@ -194,11 +194,7 @@
   ul {
     padding: 0;
 
-    @media screen and (max-width:$mq-mobile-s) {
-      background: red;
-      position: absolute;
-      z-index: 100;
-    }
+
   }
 
 
