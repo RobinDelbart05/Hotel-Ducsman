@@ -9,6 +9,9 @@ body {
     margin-left: 440px;
     box-sizing: border-box;
 
+    @media screen and (max-width: $mq-mobile-s) {
+        height: 650px;
+    }
 
     .footer-content {
         display: flex;
@@ -17,12 +20,26 @@ body {
         margin: 0;
         padding: 20px;
 
+        @media screen and (max-width: $mq-mobile-s) {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
 
 
 
         .about {
             width: 70%;
             margin-left: 32px;
+
+            @media screen and (max-width: $mq-mobile-s) {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+
         }
 
         .about p {
@@ -34,7 +51,12 @@ body {
         .footer-contact {
             width: 30%;
 
-        }      
+            @media screen and (max-width: $mq-mobile-s) {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
 
         h3 {
             font-size: 1.5rem;
@@ -55,6 +77,10 @@ body {
             margin-left: 50px;
             font-family: "montserra";
             font-weight: 100;
+
+            @media screen and (max-width: $mq-mobile-s) {
+                margin: 20px 0;
+            }
         }
 
         p {
@@ -64,6 +90,13 @@ body {
             margin-left: 50px;
             font-weight: lighter;
             color: rgb(155, 155, 155);
+
+            @media screen and (max-width: $mq-mobile-s) {
+                margin: 0;
+                text-align: left;
+                margin: auto;
+                width: 90% !important;
+            }
         }
 
 
@@ -125,7 +158,7 @@ body {
             margin-top: 20px;
             margin-bottom: 60px;
             margin-left: 20px;
-
+            text-align: left;
 
             a {
                 font-size: 1.2rem;

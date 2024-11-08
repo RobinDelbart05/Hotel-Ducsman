@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin-left: 440px;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   @media screen and (max-width: $mq-mobile) {
     margin-left: 0;
