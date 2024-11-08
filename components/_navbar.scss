@@ -11,9 +11,11 @@
     align-items: center;
     padding: 30px 0;
     overflow-y: hidden;
+
     &:hover {
       top: 0px;
     }
+
     /*
     &:after {
       content: "";
@@ -59,10 +61,12 @@
     @media screen and (max-width: $mq-mobile) {
       transform: translateY(-10px);
     }
+
     p {
       color: #927248;
       margin: 0;
       font-size: small;
+
       @media screen and (max-width: $mq-mobile) {
         font-size: 1.6rem;
       }
@@ -81,12 +85,17 @@
       align-items: center;
       flex-direction: column;
       cursor: pointer;
+
       * {
         display: none;
       }
     }
-    .burger-barre {
+
+    @media screen and (max-width:$mq-mobile-s) {}
+
+    screen .burger-barre {
       display: none;
+
       @media screen and (max-width: $mq-mobile) {
         display: inline-block;
         height: 3px;
@@ -152,14 +161,21 @@
       margin-bottom: 20px;
       font-family: "Agdasima";
 
+      .surbrillance {
+        color: #927248;
+
+      }
+
+
+
       a {
         font-weight: 100;
         letter-spacing: 2px;
+
+
       }
 
-      .mobile {
-        color: #927248;
-      }
+
     }
   }
 
