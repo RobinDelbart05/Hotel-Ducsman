@@ -15,6 +15,9 @@
     user-select: none;
     font-size: 1.2rem;
     letter-spacing: 5px;
+    @media screen and (max-width: $mq-mobile-s) {
+      font-size: 0.8rem;
+    }
   }
   *.sur-titre {
     color: $surTitre;
@@ -54,6 +57,9 @@
         height: 65vh;
         cursor: pointer;
       }
+      @media screen and (max-width: $mq-mobile-s) {
+        height: 70vh;
+      }
       .header-img-filter {
         position: absolute;
         width: 100%;
@@ -73,6 +79,10 @@
           transform: scale(0.7);
           margin-top: 120px;
         }
+        @media screen and (max-width: $mq-mobile-s) {
+          transform: scale(0.7);
+          margin-top: 80px;
+        }
         * {
           user-select: none;
         }
@@ -91,6 +101,10 @@
           letter-spacing: 20px;
           margin-bottom: 30px;
           font-size: 3rem;
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 1.5rem;
+            letter-spacing: 15px;
+          }
         }
         a {
           text-decoration: none;
@@ -149,17 +163,29 @@
         height: 35vh;
         padding: 10px 60px 60px 60px;
       }
+      @media screen and (max-width: $mq-mobile-s) {
+        padding: 10px 25px 10px 25px;
+      }
       .header-desc-legende {
         width: 50%;
         @media screen and (max-width: 1200px) {
           width: 100%;
           text-align: center;
         }
+        .stars {
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 0.6rem;
+          }
+        }
         .sur-titre {
           margin: 20px 0;
           @media screen and (max-width: 1350px) {
             margin: 7px 0;
             font-size: 0.8rem !important;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 0.5rem !important;
+            margin: 3px 0;
           }
         }
         h2 {
@@ -175,14 +201,36 @@
             font-size: 2.2rem;
             margin-bottom: 40px;
           }
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 1.8rem !important;
+            margin-bottom: 10px;
+          }
         }
         p {
           line-height: 25px;
           color: $texte;
           @media screen and (max-width: $mq-mobile) {
             text-align: left;
-            font-size: 1rem;
-            line-height: 18px;
+            font-size: 1.3rem;
+            line-height: 22px;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 1.2rem !important;
+            line-height: 20px;
+          }
+          @media screen and (max-width: 650px) {
+            font-size: 1rem !important;
+            line-height: 15px;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            line-height: 15px;
+            font-size: 0.6rem !important;
+            margin: 5px;
+          }
+        }
+        br {
+          @media screen and (max-width: $mq-mobile-s) {
+            display: none;
           }
         }
       }
@@ -223,6 +271,9 @@
         padding: 20px 0px;
         height: 5000px;
       }
+      @media screen and (max-width: $mq-mobile-s) {
+        height: 2500px;
+      }
       .chambers-container {
         height: 100%;
         @media screen and (max-width: $mq-mobile) {
@@ -234,6 +285,9 @@
           @media screen and (max-width: $mq-mobile) {
             font-size: 0.7rem;
           }
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 0.5rem;
+          }
         }
         h2 {
           color: whitesmoke;
@@ -244,6 +298,9 @@
           text-transform: capitalize;
           @media screen and (max-width: $mq-mobile) {
             font-size: 2.5rem;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 1.6rem;
           }
         }
         .chambers-img-containers {
@@ -300,6 +357,11 @@
                 border-radius: 50px;
                 font-size: 1rem;
               }
+              @media screen and (max-width: $mq-mobile-s) {
+                top: 112%;
+                padding: 10px 20px;
+                font-size: 0.8rem;
+              }
               &:hover {
                 background: #ffffff46;
                 color: #000000;
@@ -321,6 +383,15 @@
                 bottom: -17%;
                 left: 50px;
                 transform: scale(1.1);
+              }
+              @media screen and (max-width: $mq-mobile-s) {
+                bottom: -23%;
+                left: 10px;
+                transform: scale(0.9);
+              }
+              @media screen and (max-width: 600px) {
+                transform: scale(0.8);
+                left: 0;
               }
               &:hover {
                 * {
@@ -347,11 +418,17 @@
                   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
                   "Helvetica Neue", sans-serif;
                 font-weight: lighter;
+                @media screen and (max-width: $mq-mobile-s) {
+                  font-size: 0.75rem;
+                }
               }
               .cicd-name {
                 position: relative;
                 font-size: 1.25rem;
                 letter-spacing: 1px;
+                @media screen and (max-width: $mq-mobile-s) {
+                  font-size: 1rem;
+                }
                 h3 {
                   font-weight: lighter;
                   color: whitesmoke;
@@ -366,6 +443,9 @@
                   @media screen and (max-width: $mq-mobile) {
                     left: 1%;
                     width: 80px;
+                  }
+                  @media screen and (max-width: $mq-mobile-s) {
+                    width: 50px;
                   }
                 }
               }
@@ -384,6 +464,9 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
             height: 2900px;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            height: 1400px;
           }
           .chambers-img-container:nth-child(1) {
             background-image: url(/images/rooms/1.jpg);
@@ -406,6 +489,9 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 1fr);
             height: 1900px;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            height: 900px;
           }
           .chambers-img-container:nth-child(1) {
             background-image: url(/images/rooms/4.jpg);
@@ -529,6 +615,10 @@
       @media screen and (max-width: $mq-mobile) {
         height: 600px;
       }
+      @media screen and (max-width: $mq-mobile-s) {
+        padding: 20px;
+        height: 650px;
+      }
       .options-container {
         height: 100%;
         display: flex;
@@ -555,6 +645,9 @@
         @media screen and (max-width: $mq-mobile) {
           gap: 40px;
         }
+        @media screen and (max-width: $mq-mobile-s) {
+          gap: 10px;
+        }
         .options-desc {
           aspect-ratio: 1/1;
           height: 100%;
@@ -567,15 +660,24 @@
             width: 100%;
             aspect-ratio: auto;
           }
+          @media screen and (max-width: $mq-mobile-s) {
+            padding: 0 20px;
+          }
           h2 {
             font-size: 3rem;
             margin-bottom: 25px;
             font-weight: lighter;
+            @media screen and (max-width: $mq-mobile-s) {
+              font-size: 1.5rem;
+            }
           }
           p {
             line-height: 25px;
             opacity: 0.6;
             margin-bottom: 30px;
+            @media screen and (max-width: $mq-mobile-s) {
+              font-size: 0.85rem;
+            }
           }
           .options-desc-infos {
             display: flex;
@@ -606,7 +708,6 @@
         .options-card {
           padding: 50px;
           aspect-ratio: 1/1;
-          //   width: 30%;
           background: $bg-cards;
           color: $texte;
           height: 100%;
@@ -619,6 +720,12 @@
           @media screen and (max-width: $mq-mobile) {
             width: 45%;
             height: 50%;
+          }
+          @media screen and (max-width: $mq-mobile-s) {
+            padding: 10px;
+            aspect-ratio: auto;
+            height: 25%;
+            width: 70%;
           }
           .options-card-container {
             display: flex;
@@ -640,6 +747,9 @@
               @media screen and (max-width: 800px) {
                 font-size: 3vw !important;
               }
+              @media screen and (max-width: $mq-mobile-s) {
+                font-size: 1.1rem !important;
+              }
             }
             .price-container {
               display: flex;
@@ -658,6 +768,9 @@
                 @media screen and (max-width: $mq-mobile) {
                   font-size: 3.5vw !important;
                 }
+                @media screen and (max-width: $mq-mobile-s) {
+                  font-size: 1.3rem !important;
+                }
               }
             }
             ul {
@@ -674,12 +787,21 @@
                 @media screen and (max-width: 800px) {
                   font-size: 2vw !important;
                 }
+                @media screen and (max-width: $mq-mobile-s) {
+                  font-size: 0.65rem !important;
+                  height: 10px;
+                  margin-bottom: 10px;
+                }
                 .options-icon {
                   color: $stars;
                   display: flex;
                   i {
                     height: 30px;
                     width: 30px;
+                    @media screen and (max-width: $mq-mobile-s) {
+                      width: 15px;
+                      height: 15px;
+                    }
                   }
                 }
                 display: flex;
@@ -703,6 +825,9 @@
       @media screen and (max-width: $mq-mobile) {
         padding: 120px 20px 80px 20px;
       }
+      @media screen and (max-width: $mq-mobile-s) {
+        padding: 0px 10px 20px 10px;
+      }
       .services-container {
         height: 100%;
         h2 {
@@ -710,6 +835,9 @@
           font-size: 3rem;
           font-weight: lighter;
           margin-bottom: 50px;
+          @media screen and (max-width: $mq-mobile-s) {
+            font-size: 2.2rem;
+          }
         }
         .services-container-cards {
           display: grid;
@@ -737,6 +865,7 @@
             grid-template-rows: repeat(6, 1fr);
             width: 65%;
             margin: auto;
+            justify-content: center;
           }
           .services-container-card {
             border: 1px solid rgb(49, 49, 49);
@@ -745,6 +874,11 @@
             @media screen and (max-width: 1700px) {
               height: 350px;
               margin: auto;
+              justify-content: center;
+            }
+            @media screen and (max-width: $mq-mobile-s) {
+              height: 300px;
+              padding: 15px;
             }
             i {
               display: inline-block;

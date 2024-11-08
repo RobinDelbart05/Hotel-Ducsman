@@ -15,7 +15,10 @@
     &:hover {
       top: 0px;
     }
-
+    @media screen and (max-width: $mq-mobile-s) {
+      height: 50px;
+      padding: 15px 0;
+    }
     /*
     &:after {
       content: "";
@@ -90,10 +93,7 @@
         display: none;
       }
     }
-
-    @media screen and (max-width:$mq-mobile-s) {}
-
-    screen .burger-barre {
+    .burger-barre {
       display: none;
 
       @media screen and (max-width: $mq-mobile) {
@@ -161,21 +161,14 @@
       margin-bottom: 20px;
       font-family: "Agdasima";
 
-      .surbrillance {
-        color: #927248;
-
-      }
-
-
-
       a {
         font-weight: 100;
         letter-spacing: 2px;
-
-
       }
 
-
+      .mobile {
+        color: #927248;
+      }
     }
   }
 
