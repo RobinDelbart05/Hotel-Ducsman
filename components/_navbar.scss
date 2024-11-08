@@ -3,37 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 .navbar {
-  @media screen and (max-width: $mq-mobile) {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    top: 0px;
-    align-items: center;
-    padding: 30px 0;
-    overflow-y: hidden;
-
-    &:hover {
-      top: 0px;
-    }
-    @media screen and (max-width: $mq-mobile-s) {
-      height: 50px;
-      padding: 15px 0;
-    }
-    /*
-    &:after {
-      content: "";
-      position: absolute;
-      height: 180px;
-      width: 100%;
-      background: red;
-      top: 180px;
-      left: 0;
-    }
-    &:after:hover {
-      top: 360px;
-    }*/
-  }
-
   background-color: #1b1b1b;
   color: white;
   display: flex;
@@ -52,12 +21,50 @@
   position: fixed;
   overflow-x: hidden;
 
+  @media screen and (max-width: $mq-mobile) {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    align-items: center;
+    padding: 30px 0;
+    overflow-y: hidden;
+
+    &:hover {
+      top: 0px;
+    }
+
+    @media screen and (max-width: $mq-mobile-s) {
+      height: 50px;
+      padding: 15px 0;
+    }
+
+    /*
+    &:after {
+      content: "";
+      position: absolute;
+      height: 180px;
+      width: 100%;
+      background: red;
+      top: 180px;
+      left: 0;
+    }
+    &:after:hover {
+      top: 360px;
+    }*/
+  }
+
   h1 {
     color: #927248; // Couleur dorée pour le logo
     font-size: 35px;
     margin: 10px;
     font-family: "Open Sans" serif;
     font-weight: lighter;
+
+    @media screen and (max-width: $mq-mobile-s) {
+      font-size: 15px;
+      margin: 5px;
+    }
   }
 
   .etoiles {
@@ -72,6 +79,10 @@
 
       @media screen and (max-width: $mq-mobile) {
         font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: $mq-mobile-s) {
+        font-size: 15px;
       }
     }
   }
@@ -93,6 +104,14 @@
         display: none;
       }
     }
+
+    @media screen and (max-width: $mq-mobile-s) {
+      width: 45px;
+      height: 45px;
+      left: 10px;
+      top: 10px;
+    }
+
     .burger-barre {
       display: none;
 
@@ -102,6 +121,10 @@
         width: 80%;
         background: whitesmoke;
         border-radius: 15px;
+      }
+
+      @media screen and (max-width: $mq-mobile-s) {
+        height: 1px;
       }
     }
   }
@@ -113,6 +136,12 @@
     margin-bottom: 50px;
     font-family: "Abel";
     font-weight: bolder;
+
+    @media screen and (max-width: $mq-mobile-s) {
+      font-size: 10px;
+      letter-spacing: 1px;
+      margin: 5px;
+    }
   }
 
   .infos {
@@ -121,6 +150,9 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: $mq-mobile-s) {
+    }
 
     .flaticon-call {
       font-size: 45px; // Taille de l'icône de téléphone
@@ -152,44 +184,44 @@
 
   ul {
     padding: 0;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      text-align: left;
-      margin-bottom: 20px;
-      font-family: "Agdasima";
-
-      a {
-        font-weight: 100;
-        letter-spacing: 2px;
-      }
-
-      .mobile {
-        color: #927248;
-      }
-    }
   }
 
-  // Styles des liens de navigation
-
-  a {
-    color: #b6b0b0; // Couleur de base des liens
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    &:hover {
-      color: #927248; // Couleur légèrement plus claire au survol
-    }
-  }
-
-  // Conteneur pour les liens de navigation
-
-  .navbar-links {
+  li {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: "Agdasima";
+
+    a {
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+
+    .surbrillance {
+      color: #927248;
+    }
   }
+}
+
+// Styles des liens de navigation
+
+a {
+  color: #b6b0b0; // Couleur de base des liens
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    color: #927248; // Couleur légèrement plus claire au survol
+  }
+}
+
+// Conteneur pour les liens de navigation
+
+.navbar-links {
+  flex-direction: column;
+  width: 100%;
 }
